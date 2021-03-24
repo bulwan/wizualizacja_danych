@@ -9,7 +9,7 @@ class NaZakupy:
         return self.nazwa_produktu
 
     def ile_produktu(self):
-        return self.nazwa_produktu + " " + self.jednostka_miary
+        return self.ilosc, self.jednostka_miary
 
     def ile_kosztuje(self):
         return self.ilosc*self.cena_jed
