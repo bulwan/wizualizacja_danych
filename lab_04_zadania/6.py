@@ -45,9 +45,22 @@ class slowa:
                 return "to nie jest anagram"
     
     def wyswietl(self):
-        print("piersze slowo to: ", self.slowo1, "drugie slowo to: ", self.slowo2)
+        print("piersze slowo to: ", self.slowo1)
+        print("drugie slowo to: ", self.slowo2, end="")
+        return ""
+     
+    def __del__(self):
+        return ""
+
 
 slowo = slowa("Natan", "natan")
 print(slowo.palindrom())
 print(slowo.metagram())
 print(slowo.anagram())
+
+#sprawdzenie del
+print("--s p r a w d z e n i e--")
+print(slowo.wyswietl())
+del slowo
+print(slowo.wyswietl())
+
